@@ -89,7 +89,8 @@ function promptManager () {
     .then (managerInfo => {
         // console.log(managerInfo)
         var manager = new Manager (managerInfo.name, managerInfo.ID, managerInfo.email, managerInfo.number)
-        console.log(manager)
+        // console.log(manager)
+        employees.push (manager)
         promptMenu ()
     })
 }
@@ -107,7 +108,7 @@ function promptMenu () {
         ) {
             promptIntern ()
         } else {
-            return;
+            console.log(employees);
         }
     }) 
 }
@@ -118,6 +119,7 @@ function promptEngineer () {
         // console.log(engineerInfo)
         var engineer = new Engineer (engineerInfo.name, engineerInfo.ID, engineerInfo.email, engineerInfo.github)
         // console.log(engineer)
+        employees.push (engineer)
         promptMenu ()
     })
 }
@@ -128,6 +130,7 @@ function promptIntern () {
         // console.log(internInfo)
         var intern = new Intern (internInfo.name, internInfo.ID, internInfo.email, internInfo.school)
         // console.log(intern)
+        employees.push (intern)
         promptMenu ()
     })
 }
