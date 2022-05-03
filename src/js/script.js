@@ -19,13 +19,15 @@ function generateHTML (employees) {
 
 function addManager(manager) {
     return `
-    <div class="card col-2" style="width: 18rem;">
-        <div class="card-body cardBody">
-            <h5 class="card-title title">${manager.name}</h5>
-            <h6 class="card-title title">Manager</h6>
-            <h6 class="card-subtitle">${manager.id}</h6>
-            <a href="#" class="card-link">${manager.email}</a>
-            <h6 class="card-subtitle">${manager.number}</h6>
+    <div class="card col-2">
+        <div class="card-header bg-primary">
+            <h5 class="card-title text-white">${manager.name}</h5>
+            <h6 class="card-title text-white">Manager</h6>
+        </div>
+        <div class="card-body cardBody bg-light text-dark">
+            <h6 class="card-subtitle">ID:${manager.id}</h6>
+            <a href="#" class="card-link">Email:${manager.email}</a>
+            <h6 class="card-subtitle">Number:${manager.officenumber}</h6>
         </div>
     </div>
     `
@@ -48,6 +50,10 @@ function addEngineer(engineer) {
 function addIntern(intern) {
     return `
     <div class="card col-2" style="width: 18rem;">
+        <div class="card-header">
+            <h5 class="card-title">${intern.name}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
+         </div>
         <div class="card-body">
             <h5 class="card-title">${intern.name}</h5>
             <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
@@ -72,8 +78,8 @@ function init (data) {
         <title>My Employees</title>
     </head>
     <body>
-    <header>
-        <h1>My Team</h1>
+    <header class="bg-danger">
+        <h1 class="text-white">My Team</h1>
     </header>
     <div class="row d-flex justify-content-center">
     ${data}
