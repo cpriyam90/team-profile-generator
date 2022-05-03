@@ -2,6 +2,7 @@ const inquirer = require ("inquirer")
 const Manager = require ("./lib/Manager")
 const Engineer = require ("./lib/Engineer")
 const Intern = require ("./lib/Intern")
+const generateHTML = require ("./src/js/script.js")
 
 var employees = []
 
@@ -108,7 +109,8 @@ function promptMenu () {
         ) {
             promptIntern ()
         } else {
-            console.log(employees);
+            // console.log(employees);
+            generateHTML (employees)
         }
     }) 
 }
