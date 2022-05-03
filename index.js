@@ -1,3 +1,7 @@
+const inquirer = require ("inquirer");
+
+var employees = []
+
 //Questions prompted to user when terminal is run
 var questionList = [
     {
@@ -20,15 +24,18 @@ var questionList = [
         name: "number",
         message: "What is your office number?"
     },
+]
+
+var promptMenu = [
     {
         type: "list",
         name: "employee",
-        message: "What employee are you adding?",
-        choices: ["Engineer", "Intern"]
+        message: "What would like to do next?",
+        choices: ["Add an Engineer", "Add an Intern", "Quit"]
     },
 ]
 
-var engineerList [
+var engineerList = [
     {
         type: "input",
         name: "name",
@@ -51,7 +58,7 @@ var engineerList [
     },
 ]
 
-var InternList [
+var InternList = [
     {
         type: "input",
         name: "name",
@@ -73,3 +80,7 @@ var InternList [
         message: "Enter the intern's school."
     },
 ]
+
+function promptManager () {
+    ret
+}
