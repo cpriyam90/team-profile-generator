@@ -1,3 +1,11 @@
+// * Credits/Citations *
+// 1 Module 10 lessons on OOP
+// 2 Tutor Abdullah explained what jest is and how to run my tests on my terminal. He also helped me understand the role of classess and execute the  logic for the flow of my index.js file.
+// 3 W3 schools tutorial on how to use "mailto" command in html for email address
+// 4 Bootsrap documentation for styling the HTML
+// 5 Bootstrap icons documentation
+// 6 Jest documentation for running tests
+
 const fs = require ("fs")
 function generateHTML (employees) {
     var employeeData = ""
