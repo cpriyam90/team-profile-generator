@@ -22,13 +22,13 @@ function addManager(manager) {
     <div class="card col-2 m-2">
         <div class="card-header bg-primary">
             <h5 class="card-title text-white">${manager.name}</h5>
-            <h6 class="card-title text-white">Manager</h6>
+            <h6 class="card-title text-white"><i class="bi bi-person-square"></i> Manager</h6>
         </div>
         <div class="bg-light text-dark">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${manager.id}</li>
                 <li class="list-group-item">Number: ${manager.officenumber}</li>
-                <li class="list-group-item"><a href="mailto:${manager.email}" class="card-link">Email: ${manager.email}</a></li>
+                <li class="list-group-item">Email: <a href="mailto:${manager.email}" class="card-link">${manager.email}</a></li>
             </ul>
         </div>
     </div>
@@ -40,13 +40,13 @@ function addEngineer(engineer) {
     <div class="card col-2 m-2">
         <div class="card-header bg-primary">
             <h5 class="card-title text-white">${engineer.name}</h5>
-            <h6 class="card-title text-white">Engineer</h6>
+            <h6 class="card-title text-white"><i class="bi bi-git"></i> Engineer</h6>
         </div>
         <div class="bg-light text-dark">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${engineer.id}</li>
-                <li class="list-group-item"><a href="https://github.com/${engineer.github}" target="_blank" class="card-link">Github: ${engineer.github}</a></li>
-                <li class="list-group-item"><a href=""mailto:${engineer.email}" class="card-link">Email: ${engineer.email}</a></li>
+                <li class="list-group-item">Github: <a href="https://github.com/${engineer.github}" target="_blank" class="card-link">${engineer.github}</a></li>
+                <li class="list-group-item">Email: <a href=""mailto:${engineer.email}" class="card-link">${engineer.email}</a></li>
             </ul>
         </div>
     </div>
@@ -58,13 +58,13 @@ function addIntern(intern) {
     <div class="card col-2 m-2">
         <div class="card-header bg-primary">
             <h5 class="card-title text-white">${intern.name}</h5>
-            <h6 class="card-title text-white">Intern</h6>
+            <h6 class="card-title text-white"><i class="bi bi-mortarboard-fill"></i> Intern</h6>
         </div>
         <div class="bg-light text-dark">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${intern.id}</li>
                 <li class="list-group-item">School: ${intern.school}</li>
-                <li class="list-group-item"><a href=""mailto:${intern.email}" class="card-link">Email: ${intern.email}</a></li>
+                <li class="list-group-item">Email: <a href=""mailto:${intern.email}" class="card-link">${intern.email}</a></li>
             </ul>
         </div>
     </div>
@@ -80,6 +80,7 @@ function init (data) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./css/style.css"/>
         <title>My Employees</title>
     </head>
