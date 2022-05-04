@@ -19,7 +19,7 @@ To generate a HTML, user must have Node.js installed and then run the command no
 
 
 ## Video-Link
-**[Click here for video link](https://youtu.be/7-4gAELGJSI)**
+**[Click here for video link](https://www.youtube.com/watch?v=nOvaxIVZDSo)**
 
 
 ## Credits/Citations
@@ -47,8 +47,8 @@ The manager can link their email and upon interaction the user will be taken to 
 
 ## Screenshots
 See below screenshots of generated HTML
-![alt="Screenshot generated readme"](./assets/images/screenshot1.png)
-![alt="Screenshot of generated readme"](./assets/images/screenshot2.png)
+![alt="Screenshot generated HTML"](./assets/images/screenshot1.png)
+
 
 
 
