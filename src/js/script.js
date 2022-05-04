@@ -24,10 +24,12 @@ function addManager(manager) {
             <h5 class="card-title text-white">${manager.name}</h5>
             <h6 class="card-title text-white">Manager</h6>
         </div>
-        <div class="card-body cardBody bg-light text-dark">
-            <h6 class="card-subtitle mb-1">ID: ${manager.id}</h6>
-            <a href="#" class="card-link mb-1">Email: ${manager.email}</a>
-            <h6 class="card-subtitle mb-1">Number: ${manager.officenumber}</h6>
+        <div class="bg-light text-dark">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${manager.id}</li>
+                <li class="list-group-item">Number: ${manager.officenumber}</li>
+                <li class="list-group-item"><a href="#" class="card-link">Email: ${manager.email}</a></li>
+            </ul>
         </div>
     </div>
     `
@@ -36,12 +38,16 @@ function addManager(manager) {
 function addEngineer(engineer) {
     return `
     <div class="card col-2 m-2">
-        <div class="card-body">
-            <h5 class="card-title">${engineer.name}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
-            <h6 class="card-subtitle mb-2 text-muted">${engineer.id}</h6>
-            <a href="#" class="card-link">${engineer.email}</a>
-            <h6 class="card-subtitle mb-2 text-muted">${engineer.github}</h6>
+        <div class="card-header bg-primary">
+            <h5 class="card-title text-white">${engineer.name}</h5>
+            <h6 class="card-title text-white">Engineer</h6>
+        </div>
+        <div class="bg-light text-dark">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${engineer.id}</li>
+                <li class="list-group-item"><a href="https://github.com/${engineer.github} target="_blank"" class="card-link">Github: ${engineer.github}</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Email: ${engineer.email}</a></li>
+            </ul>
         </div>
     </div>
     `
@@ -50,16 +56,16 @@ function addEngineer(engineer) {
 function addIntern(intern) {
     return `
     <div class="card col-2 m-2">
-        <div class="card-header">
-            <h5 class="card-title">${intern.name}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
-         </div>
-        <div class="card-body">
-            <h5 class="card-title">${intern.name}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
-            <h6 class="card-subtitle mb-2 text-muted">${intern.id}</h6>
-            <a href="#" class="card-link">${intern.email}</a>
-            <h6 class="card-subtitle mb-2 text-muted">${intern.school}</h6>
+        <div class="card-header bg-primary">
+            <h5 class="card-title text-white">${intern.name}</h5>
+            <h6 class="card-title text-white">Intern</h6>
+        </div>
+        <div class="bg-light text-dark">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${intern.id}</li>
+                <li class="list-group-item">Number: ${intern.school}</li>
+                <li class="list-group-item"><a href="#" class="card-link">Email: ${intern.email}</a></li>
+            </ul>
         </div>
     </div>
     `
