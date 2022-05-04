@@ -58,7 +58,7 @@ var engineerList = [
     {
         type: "input",
         name: "github",
-        message: "Enter the engineer's github."
+        message: "Enter the engineer's github username."
     },
 ]
 
