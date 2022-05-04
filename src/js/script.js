@@ -28,7 +28,7 @@ function addManager(manager) {
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${manager.id}</li>
                 <li class="list-group-item">Number: ${manager.officenumber}</li>
-                <li class="list-group-item"><a href="#" class="card-link">Email: ${manager.email}</a></li>
+                <li class="list-group-item"><a href="mailto:${manager.email}" class="card-link">Email: ${manager.email}</a></li>
             </ul>
         </div>
     </div>
@@ -45,8 +45,8 @@ function addEngineer(engineer) {
         <div class="bg-light text-dark">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${engineer.id}</li>
-                <li class="list-group-item"><a href="https://github.com/${engineer.github} target="_blank"" class="card-link">Github: ${engineer.github}</a></li>
-                <li class="list-group-item"><a href="#" class="card-link">Email: ${engineer.email}</a></li>
+                <li class="list-group-item"><a href="https://github.com/${engineer.github}" target="_blank" class="card-link">Github: ${engineer.github}</a></li>
+                <li class="list-group-item"><a href=""mailto:${engineer.email}" class="card-link">Email: ${engineer.email}</a></li>
             </ul>
         </div>
     </div>
@@ -63,8 +63,8 @@ function addIntern(intern) {
         <div class="bg-light text-dark">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${intern.id}</li>
-                <li class="list-group-item">Number: ${intern.school}</li>
-                <li class="list-group-item"><a href="#" class="card-link">Email: ${intern.email}</a></li>
+                <li class="list-group-item">School: ${intern.school}</li>
+                <li class="list-group-item"><a href=""mailto:${intern.email}" class="card-link">Email: ${intern.email}</a></li>
             </ul>
         </div>
     </div>
