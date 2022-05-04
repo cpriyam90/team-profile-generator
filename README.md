@@ -47,7 +47,7 @@ The manager can link their email and upon interaction the user will be taken to 
 
 ## Screenshots
 See below screenshots of generated HTML
-![alt="Screenshot generated HTML"](./assets/images/screenshot1.png)
+![alt="Screenshot generated HTML"](./src/images/screenshot.png)
 
 
 
