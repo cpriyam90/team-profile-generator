@@ -6,6 +6,7 @@
 // 5 Bootstrap icons documentation
 // 6 Jest documentation for running tests
 
+// Function to generate HTML by using file system
 const fs = require ("fs")
 function generateHTML (employees) {
     var employeeData = ""
@@ -23,8 +24,7 @@ function generateHTML (employees) {
     fs.writeFileSync("./dist/index.html", init(employeeData))
 }
 
-
-
+// Function to create manager card info
 function addManager(manager) {
     return `
     <div class="card col-2 m-2">
@@ -43,6 +43,7 @@ function addManager(manager) {
     `
 }
 
+// Function to create Engineer card info
 function addEngineer(engineer) {
     return `
     <div class="card col-2 m-2">
@@ -61,6 +62,7 @@ function addEngineer(engineer) {
     `
 }
 
+// Function to create Intern card info
 function addIntern(intern) {
     return `
     <div class="card col-2 m-2">
@@ -79,6 +81,7 @@ function addIntern(intern) {
     `
 }
 
+// Function to return data to generated HTML
 function init (data) {
     return `
     <!DOCTYPE html>

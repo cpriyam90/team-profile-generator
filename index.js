@@ -6,6 +6,7 @@
 // 5 Bootstrap icons documentation
 // 6 Jest documentation for running tests
 
+// Inquirer and classes are called in the const below
 const inquirer = require ("inquirer")
 const Manager = require ("./lib/Manager")
 const Engineer = require ("./lib/Engineer")
